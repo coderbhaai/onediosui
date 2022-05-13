@@ -10,8 +10,9 @@
         @livewireStyles
     </head>
     <body class="font-sans antialiased">
-        @livewire('navigation-menu')
+        @livewire('parts.header')
         {{ $slot }}
+        @livewire('parts.footer')
         @stack('modals')
         <script src="{{ mix('js/app.js') }}" defer></script>
         @livewireScripts

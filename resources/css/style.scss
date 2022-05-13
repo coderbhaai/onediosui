@@ -1,0 +1,148 @@
+$primary : #14213d;
+$action: #ad2e24;
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
+.form-control, body {
+    font-family: 'Source Sans Pro', sans-serif !important;
+}
+img, img:focus, input, input:focus, button, button:focus, a, a:focus{
+    outline: none;
+}
+img{
+    width: 100%;
+    height: auto;
+}
+input, input:focus{
+    box-shadow: none !important;
+}
+p{
+    text-align: justify;
+}
+p, ul li, ol li, dl li{
+    line-height: 2em;
+    color: #2e2e38;
+}
+.logo{
+    max-width: 120px;
+}
+.dd >div, .dd >div div:first-child{
+    height: 100%;
+}
+.mobiledd{
+    .relative{
+        div:last-child{
+           width: 100%;
+           a{
+            --tw-text-opacity: 1;
+            color: rgba(107, 114, 128, var(--tw-text-opacity));
+           }
+        }
+    }
+}
+.content{
+    h1,h2,h3,h4,h5,h6{
+        margin-top: 1em;        
+        font-weight: 500;
+        color: #2e2e38;
+    }
+    h1, h2{
+        font-size: 25px;
+    }
+    h3{
+        font-size: 20px;
+    }
+    h4{
+        font-size: 18px;
+    }
+    h5{
+        font-size: 16px;
+    }
+    h6{
+        font-size: 15px;
+    }
+}
+.content a, a.specialanchor{
+    color: #ad2e24;
+    font-weight: 600;
+    position: relative;
+    display: inline-block;
+    &:after {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 1em;
+        border-bottom: 2px solid #ad2e24;
+        content: '';
+    }
+}
+.container{
+    width: 85%;
+    max-width: 85%;
+}
+.oneliner{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+}
+.web{
+    display: block
+}
+.mobile{
+    display: none
+}
+.swal-overlay{
+    background: transparent;
+    .swal-modal{
+        position: absolute;
+        bottom: 3em;
+        right: 0;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        width: unset;
+        background: $action;
+        border-radius: 5px 0 0 5px;
+        .swal-title{
+            margin: 0;
+            font-size: 16px;
+            color: #fff;
+            font-weight: 400;
+        }
+        .swal-footer{
+            margin: 0;
+            padding: 0;
+            .swal-button{
+                background: $primary;
+            }
+        }
+    }
+}
+.content{
+    ol, ul{
+        li{
+            line-height: 2em;
+        }
+    }
+    img{
+        margin: 1em 0;
+    }
+}
+[x-cloak] { display: none !important; }
+@media (max-width:767px) {
+    .web{
+        display: none !important;
+    }
+    .mobile{
+        display: block !important;
+    }
+    .container{
+        width: 98%;
+        max-width: 98%;
+        padding-left: .5em;
+        padding-right: .5em;
+    }
+}
